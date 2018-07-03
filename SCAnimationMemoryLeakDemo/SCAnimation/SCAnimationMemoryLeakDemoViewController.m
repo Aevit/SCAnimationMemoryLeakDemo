@@ -120,7 +120,7 @@ static CGFloat moveLength = 375;
     CAKeyframeAnimation *hideAni = [CAKeyframeAnimation animationWithKeyPath:@"opacity"];
     hideAni.duration = pauseDuration;
     hideAni.values = @[@0, @0];
-    hideAni.beginTime = CACurrentMediaTime() + moveDuration; // important!
+    hideAni.beginTime = moveDuration; // important!
     
     // 动画组
     CAAnimationGroup *group = [CAAnimationGroup animation];
